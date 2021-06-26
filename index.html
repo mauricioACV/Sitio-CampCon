@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampCon - Demarcaciones Viales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles-desktop.css">
+    <script src="https://kit.fontawesome.com/81670265ac.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="header__nav--desktop">
+            <img src="./imgs/logo.jpg" alt="logo" class="logo">
+            <ul class="header__nav--desktop__menu-items">
+                <li><a href="#header">>INICIO</a></li>
+                <li><a href="#aboutus-section">>NOSOTROS</a></li>
+                <li><a href="#services-section">>SERVICIOS</a></li>
+                <li><a href="#portfolio-section">>PORTAFOLIO</a></li>
+                <li><a href="#contact-section">>CONTACTO</a></li>
+            </ul>
+            <div class="header__nav--desktop__social-media">
+              <a href=""><i class="fab fa-2x fa-facebook-square"></i></a> 
+              <a href=""><i class="fab fa-2x fa-instagram"></i></a> 
+              <a href=""><i class="fas fa-2x fa-envelope-square"></i></a> 
+              <a href=""><i class="fas fa-2x fa-phone-square"></i></a>              
+            </div>
+        </nav>
+        <!-- <nav class="header__nav-mobile">
+            <input type="checkbox" id="hamburguesa" />
+            <div class="mobile-menu-header">
+              <img src="./assets/logo.svg" alt="Logo" class="logo" />
+              <label for="hamburguesa">
+                <div class="burguer-line-1"></div>
+                <div class="burguer-line-2"></div>
+                <div class="burguer-line-3"></div>
+              </label>
+            </div>
+            <ul class="nav-menu-movil">
+              <li><a href="#section-episodes">EPISODIOS</a></li>
+              <li><a href="#section-aboutus">NOSOTROS</a></li>
+              <li><a href="#section-interviews">ENTREVISTAS</a></li>
+              <li><a href="#section-topics">TÓPICOS</a></li>
+            </ul>
+        </nav> -->
+        <section class="header__content">
+          <h1 class="header__content-title">CAMPCON</h1>
+          <p class="header__content-text"><span class="typed"></span></p>
+          <a href="#aboutus-section" class="boton boton--absolute">
+						<span class="boton__texto" role="button">Más Información</span>
+						<i class="boton__icono fas fa-2x fa-arrow-right"></i>
+					</a>
+        </section>
+    </header>
+    <main>
+        <section class="aboutus" id="aboutus-section">
+          <div class="aboutus__container"></div>
+        </section>
+        <section class="services" id="services-section">
+          <div class="services__container"></div>
+        </section>
+        <section class="portfolio" id="portfolio-section">
+          <div class="portfolio__container"></div>
+        </section>
+        <section class="contact" id="contact-section">
+          <div class="contact__container"></div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="./js/typed.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

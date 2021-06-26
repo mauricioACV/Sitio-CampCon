@@ -1,0 +1,153 @@
+/* ********************* */
+/* Global Styles */
+/* ********************* */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+/* *********************** */
+        /* Header */
+/* *********************** */
+
+.header {
+  background-image: url(../imgs/fondo1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  /* box-shadow: 0px 7px 6px 0px rgba(0,0,0,0.16); */
+  border-bottom: 5px solid rgba(40, 96, 134, 0.342);
+}
+
+.header .header__nav--desktop {
+  background: rgb(255, 255, 255);
+  width: 100%;
+  height: 50px;;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position:fixed;
+}
+
+.header__nav--desktop .logo{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.header__nav--desktop__menu-items {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav--desktop__menu-items li {
+  display: flex;
+  text-decoration: none;
+  padding: 0px 50px;
+}
+
+.header__nav--desktop__menu-items li:hover {
+  text-decoration: underline;
+}
+
+.header__nav--desktop__menu-items li a {
+  color: rgba(45, 9, 202, 0.904);
+  text-decoration: none;
+}
+
+.header__nav--desktop__social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav--desktop__social-media i {
+  color: rgba(45, 9, 202, 0.904);
+  padding: 0px 20px;
+}
+
+.header__nav--desktop__social-media i:hover {
+  color: rgba(151, 202, 9, 0.904);
+}
+
+.header__content {
+  padding: 180px 0px 0px 200px;
+
+}
+
+.header__content-title {
+  color: #fff;
+  font-size: 80px;
+  font-weight: 500;
+}
+
+.header__content-text {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.boton {
+	border: none;
+	min-width: 350px;
+	height: 60px;
+	padding: 0 30px;
+	background: #000;
+	color: #fff;
+	display: inline-block;
+	border-radius: 100px;
+	text-decoration: none;
+	display: inline-flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background: #9fad20;
+	transition: .3s ease all;
+}
+
+.boton__texto {
+  font-size: 25px;
+	font-weight: 500;
+}
+
+.boton:hover {
+	background: #1b1881;
+	text-decoration: none;
+}
+
+.boton--absolute {
+	position: absolute;
+	right: 25%;
+  top: 60%;
+}
+
+/* *********************** */
+        /* aboutus */
+/* *********************** */
+
+.aboutus,
+.services,
+.portfolio,
+ .contact {
+  height: 100vh;
+  background: rgb(40, 96, 134);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 60px 10px 10px 10px;
+}
+
+.aboutus__container,
+.services__container,
+.portfolio__container,
+.contact__container {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border-radius: 10px;
+}
