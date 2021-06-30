@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CampCon - Demarcaciones Viales</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles-desktop.css">
-    <script src="https://kit.fontawesome.com/81670265ac.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles-desktop.css" />
+    <script
+      src="https://kit.fontawesome.com/81670265ac.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header class="header" id="header">
-        <nav class="header__nav--desktop">
-            <img src="./imgs/logo.jpg" alt="logo" class="logo">
-            <ul class="header__nav--desktop__menu-items">
-                <li><a href="#header">>INICIO</a></li>
-                <li><a href="#aboutus-section">>NOSOTROS</a></li>
-                <li><a href="#services-section">>SERVICIOS</a></li>
-                <li><a href="#portfolio-section">>PORTAFOLIO</a></li>
-                <li><a href="#contact-section">>CONTACTO</a></li>
-            </ul>
-            <div class="header__nav--desktop__social-media">
-              <a href=""><i class="fab fa-2x fa-facebook-square"></i></a> 
-              <a href=""><i class="fab fa-2x fa-instagram"></i></a> 
-              <a href=""><i class="fas fa-2x fa-envelope-square"></i></a> 
-              <a href=""><i class="fas fa-2x fa-phone-square"></i></a>              
-            </div>
-        </nav>
-        <!-- <nav class="header__nav-mobile">
+      <nav class="header__nav--desktop">        
+        <label class="header__nav--desktop__logo"><i class="fas fa-hard-hat"></i>&nbsp;CAMPCON</label>
+        <ul class="header__nav--desktop__menu-items">
+          <li><a href="#header">>INICIO</a></li>
+          <li><a href="#aboutus-section">>NOSOTROS</a></li>
+          <li><a href="#services-section">>SERVICIOS</a></li>
+          <li><a href="#portfolio-section">>PORTAFOLIO</a></li>
+          <li><a href="#contact-section">>CONTACTO</a></li>
+        </ul>
+        <div class="header__nav--desktop__social-media">
+          <a href=""><i class="fab fa-2x fa-facebook-square"></i></a>
+          <a href=""><i class="fab fa-2x fa-instagram"></i></a>
+          <a href=""><i class="fas fa-2x fa-envelope-square"></i></a>
+          <a href=""><i class="fas fa-2x fa-phone-square"></i></a>
+        </div>
+      </nav>
+      <!-- <nav class="header__nav-mobile">
             <input type="checkbox" id="hamburguesa" />
             <div class="mobile-menu-header">
               <img src="./assets/logo.svg" alt="Logo" class="logo" />
@@ -46,31 +56,177 @@
               <li><a href="#section-topics">TÓPICOS</a></li>
             </ul>
         </nav> -->
-        <section class="header__content">
-          <h1 class="header__content-title">CAMPCON</h1>
-          <p class="header__content-text"><span class="typed"></span></p>
-          <a href="#aboutus-section" class="boton boton--absolute">
-						<span class="boton__texto" role="button">Más Información</span>
-						<i class="boton__icono fas fa-2x fa-arrow-right"></i>
-					</a>
-        </section>
+      <section class="header__content">
+        <!-- <h1 class="header__content-title">CAMPCON</h1> -->
+        <img src="./imgs/logo.jpg" alt="logo" class="header__content-img" />
+        <p class="header__content-text"><span class="typed"></span></p>
+        <a href="#aboutus-section" class="boton">
+          <span class="boton__texto" role="button">Más Información</span>
+          <i class="boton__icono fas fa-2x fa-arrow-right"></i>
+        </a>
+      </section>
     </header>
     <main>
-        <section class="aboutus" id="aboutus-section">
-          <div class="aboutus__container"></div>
-        </section>
-        <section class="services" id="services-section">
-          <div class="services__container"></div>
-        </section>
-        <section class="portfolio" id="portfolio-section">
-          <div class="portfolio__container"></div>
-        </section>
-        <section class="contact" id="contact-section">
-          <div class="contact__container"></div>
-        </section>
+      <section class="aboutus" id="aboutus-section">
+        <div class="aboutus-bakcground"></div>
+        <div class="aboutus-bakcground2"></div>
+        <div class="aboutus__container">
+          <div class="aboutus__container-top">
+            <div class="aboutus__container-top__content">
+              <h2 class="aboutus__container-top__title">Sobre CAMPCON</h2>
+              <p class="aboutus__container-top__text">
+                >Especialistas en Seguridad Industrial y Demarcaciones Viales.
+                Nuestros trabajos son ejecutados por equipos de tecnología
+                Airless (sin aire comprimido) lo que disminuye al mínimo la
+                polución por el pulverizado, además de lograr una alta
+                eficiencia y terminaciones de calidad.
+              </p>
+            </div>
+            <img
+              src="./imgs/logo.jpg"
+              alt="logo"
+              class="aboutus__container__img"
+            />
+          </div>
+          <div class="aboutus__container-down">
+            <div class="aboutus__container-down__content">
+              <h2 class="aboutus__container-down__title">
+                Compromiso en Calidad
+              </h2>
+              <p class="aboutus__container-down__text">
+                >Para asegurar la calidad de nuestros trabajos utilizamos
+                pintura acrílica de alto tráfico y micro esferas tipo II, ambos
+                materiales certificados por el Instituto de Investigaciones y
+                Control del Ejército (IDIC) y por la Dirección de Vialidad del
+                Ministerio de Obras Públicas de Chile (Manual de Carreteras
+                Volumen 5). Nuestro compromiso se enfoca en el cumplimiento de
+                especificaciones según la normativa vigente, en controles
+                receptivos de calidad en retrorreflectancia, luminancia y
+                resistencia al deslizamiento (fricción).
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services" id="services-section">
+        <div class="aboutus-bakcground"></div>
+        <div class="aboutus-bakcground2"></div>
+        <div class="services__container">
+          <h2 class="services__container__title">Nuestros Servicios</h2>
+          <div class="services__container__cards">
+            <div class="contenedor">
+              <figure>
+                <h3 class="contenedor__title">Demarcación Vial</h3>
+                <img src="./imgs/caminos/foto7.jpeg" />
+                <div class="capa">
+                  <h3>Pintado y Repintado de Líneas Horizontales </h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptates reiciendis doloribus perferendis soluta.
+                  </p>
+                  <a class="card__link" href="#">Ver Más</a>
+                </div>
+              </figure>
+              <figure>
+                <h3 class="contenedor__title">Demarcación de Resaltos</h3>
+                <img src="./imgs/caminos/resalto.jpg" />
+                <div class="capa">
+                  <h3>Mauro WebDev</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptates reiciendis doloribus perferendis soluta.
+                  </p>
+                </div>
+              </figure>
+              <figure>
+                <h3 class="contenedor__title">Pasos Peatonales</h3>
+                <img src="./imgs/caminos/paso-peatonal.jpg" />
+                <div class="capa">
+                  <h3>Mauro WebDev</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptates reiciendis doloribus perferendis soluta.
+                  </p>
+                </div>
+              </figure>
+              <figure>
+                <h3 class="contenedor__title">Demarcación de Soleras</h3>
+                <img src="./imgs/caminos/soleras.jpg" />
+                <div class="capa">
+                  <h3>Mauro WebDev</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptates reiciendis doloribus perferendis soluta.
+                  </p>
+                </div>
+              </figure>
+            </div>
+            <div class="contenedor">
+              <figure>
+                <h3 class="contenedor__title">Ciclo Vías</h3>
+                <img src="./imgs/caminos/ciclovia.jpg" />
+                <div class="capa">
+                  <h3>Mauro WebDev</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptates reiciendis doloribus perferendis soluta.
+                  </p>
+                </div>
+              </figure>
+              <figure>
+                <h3 class="contenedor__title">Achurados</h3>
+                <img src="./imgs/caminos/achurado.jpg" />
+                <div class="capa">
+                  <h3>Mauro WebDev</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptates reiciendis doloribus perferendis soluta.
+                  </p>
+                </div>
+              </figure>
+              <figure>
+                <h3 class="contenedor__title">Flechas Direccionales</h3>
+                <img src="./imgs/caminos/flechas.jpg" />
+                <div class="capa">
+                  <h3>Mauro WebDev</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptates reiciendis doloribus perferendis soluta.
+                  </p>
+                </div>
+              </figure>
+              <figure>
+                <h3 class="contenedor__title">Demarcación Industrial</h3>
+                <img src="./imgs/caminos/demarca-industrial.jpg" />
+                <div class="capa">
+                  <h3>Mauro WebDev</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Voluptates reiciendis doloribus perferendis soluta.
+                  </p>
+                </div>
+              </figure>
+          </div>
+
+          </div>
+        </div>
+      </section>
+      <section class="portfolio" id="portfolio-section">
+        <div class="aboutus-bakcground"></div>
+        <div class="portfolio__container"></div>
+      </section>
+      <section class="contact" id="contact-section">
+        <div class="aboutus-bakcground"></div>
+        <div class="contact__container"></div>
+        <!-- <div class="LottieContainer"></div> -->
+      </section>
     </main>
     <footer></footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.11/lottie.min.js"></script>
     <script src="./js/typed.js"></script>
     <script src="./js/app.js"></script>
-</body>
+  </body>
 </html>
+
+<!-- <h2 class="aboutus__container-left__title2">Calidad</h2>
+<p class="aboutus__container-left__content2"> </p> -->
