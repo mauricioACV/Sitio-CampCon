@@ -14,14 +14,45 @@ const typed = new Typed('.typed', {
 	contentType: 'html', // 'html' o 'null' para texto sin formato
 });
 
+window.addEventListener("load", function () {
+  new Glider(document.querySelector(".carousel__lista"), {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    draggable: false,
+    dots: ".carousel__indicadores",
+    arrows: {
+      prev: ".carousel__anterior",
+      next: ".carousel__siguiente",
+    },
+    responsive: [
+      {
+        // screens greater than >= 775px
+        breakpoint: 450,
+        settings: {
+          // Set to `auto` and provide item width to adjust to viewport
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        // screens greater than >= 1024px
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+    ],
+  });
+});
 
-const LottieContainer = document.querySelector('.LottieContainer')
+// const LottieContainer = document.querySelector('.LottieContainer')
 
-var lottieAnimation = bodymovin.loadAnimation({
-	container: LottieContainer, // ID del div
-	path: './svg/watermelon-pack-animation-03.json', // Ruta fichero .json de la animación
-	renderer: 'svg', // Requerido
-	loop: true, // Opcional
-	autoplay: true, // Opcional
-	name: "Hello World", // Opcional
-  })
+// var lottieAnimation = bodymovin.loadAnimation({
+// 	container: LottieContainer, // ID del div
+// 	path: './svg/watermelon-pack-animation-03.json', // Ruta fichero .json de la animación
+// 	renderer: 'svg', // Requerido
+// 	loop: true, // Opcional
+// 	autoplay: true, // Opcional
+// 	name: "Hello World", // Opcional
+//   });

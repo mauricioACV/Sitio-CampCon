@@ -15,6 +15,9 @@
     href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&display=swap"
     rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./css/glider.min.css">
+    <link rel="stylesheet" href="./css/carousel.css" />
     <link rel="stylesheet" href="./css/styles-desktop.css" />
     <script
       src="https://kit.fontawesome.com/81670265ac.js"
@@ -24,7 +27,7 @@
   <body>
     <header class="header" id="header">
       <nav class="header__nav--desktop">        
-        <label class="header__nav--desktop__logo"><i class="fas fa-hard-hat"></i>&nbsp;CAMPCON</label>
+        <label class="header__nav--desktop__logo"><i class="fas fa-road"></i>&nbsp;CAMPCON</label>
         <ul class="header__nav--desktop__menu-items">
           <li><a href="#header">>INICIO</a></li>
           <li><a href="#aboutus-section">>NOSOTROS</a></li>
@@ -68,7 +71,6 @@
     </header>
     <main>
       <section class="aboutus" id="aboutus-section">
-        <div class="aboutus-bakcground"></div>
         <div class="aboutus-bakcground2"></div>
         <div class="aboutus__container">
           <div class="aboutus__container-top">
@@ -109,10 +111,10 @@
         </div>
       </section>
       <section class="services" id="services-section">
-        <div class="aboutus-bakcground"></div>
         <div class="aboutus-bakcground2"></div>
         <div class="services__container">
           <h2 class="services__container__title">Nuestros Servicios</h2>
+          <p class="services__container__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident et beatae eius distinctio nam, repellat doloremque natus dicta obcaecati quos qui quidem itaque vitae debitis! Aliquam beatae nulla explicabo perferendis!</p>
           <div class="services__container__cards">
             <div class="contenedor">
               <figure>
@@ -212,17 +214,86 @@
         </div>
       </section>
       <section class="portfolio" id="portfolio-section">
-        <div class="aboutus-bakcground"></div>
-        <div class="portfolio__container"></div>
+        <div class="aboutus-bakcground2"></div>
+        <div class="portfolio__container">
+          <h2 class="portofolio__container__title">Portafolio</h2>
+          <p class="portfolio__container__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident et beatae eius distinctio nam, repellat doloremque natus dicta obcaecati quos qui quidem itaque vitae debitis! Aliquam beatae nulla explicabo perferendis!</p>
+          <div class="portofolio__container__content">
+            <div class="carousel">
+              <div class="carousel__contenedor">
+                <button aria-label="Anterior" class="carousel__anterior">
+                  <i class="fas fa-2x fa-chevron-left"></i>
+                </button>      
+                <div class="carousel__lista">
+                  <div class="carousel__elemento">
+                    <img src="./imgs/slider/1.png" alt="descripcion de la imagen">
+                    <p>descripcion de la imagen 2</p>
+                  </div>
+                  <div class="carousel__elemento">
+                    <img src="./imgs/slider/2.png" alt="descripcion de la imagen">
+                    <p>descripcion de la imagen 3</p>
+                  </div>
+                  <div class="carousel__elemento">
+                    <img src="./imgs/slider/3.png" alt="descripcion de la imagen">
+                    <p>descripcion de la imagen 4</p>
+                  </div>
+                  <div class="carousel__elemento">
+                    <img src="./imgs/slider/4.png" alt="descripcion de la imagen">
+                    <p>descripcion de la imagen 5</p>
+                  </div>
+                  <div class="carousel__elemento">
+                    <img src="./imgs/slider/5.png" alt="descripcion de la imagen">
+                    <p>descripcion de la imagen 6</p>
+                  </div>
+                  <div class="carousel__elemento">
+                    <img src="./imgs/slider/6.png" alt="descripcion de la imagen">
+                    <p>descripcion de la imagen 7</p>
+                  </div>
+                  <div class="carousel__elemento">
+                    <img src="./imgs/slider/7.png" alt="descripcion de la imagen">
+                    <p>descripcion de la imagen 8</p>
+                  </div>
+                  <div class="carousel__elemento">
+                    <img src="./imgs/slider/8.png" alt="descripcion de la imagen">
+                    <p>descripcion de la imagen 9</p>
+                  </div>
+                </div>      
+                <button aria-label="Siguiente" class="carousel__siguiente">
+                  <i class="fas fa-2x fa-chevron-right"></i>
+                </button>
+              </div>      
+              <div role="tablist" class="carousel__indicadores"></div>      
+            </div>
+          </div>
+        </div>
       </section>
       <section class="contact" id="contact-section">
-        <div class="aboutus-bakcground"></div>
-        <div class="contact__container"></div>
+        <div class="aboutus-bakcground2"></div>
+        <div class="contact__container">
+          <div class="contact__container-right">
+            <h2 class="contact__container-right__title">Contáctenos</h2>
+            <div class="form-container">
+              <form action="" class="contact__container-right__form">
+                <label for="" class="form_label">NOMBRE</label>
+                <input type="text" class="form_item">
+                <label for="" class="form_label">EMAIL</label>
+                <input type="email" class="form_item">
+                <label for="" class="form_label">MENSAJE</label>
+                <textarea name="" id="" cols="30" rows="10" class="form_item"></textarea>
+                <button class="form_item">ENVIAR</button>
+              </form>
+            </div>
+          </div>
+          <div class="contact__container-left">
+            <h2 class="contact__container-right__title">Redes Sociales</h2>
+          </div>
+        </div>
         <!-- <div class="LottieContainer"></div> -->
       </section>
     </main>
     <footer></footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.11/lottie.min.js"></script>
+    <script src="./js/glider.min.js"></script>
     <script src="./js/typed.js"></script>
     <script src="./js/app.js"></script>
   </body>

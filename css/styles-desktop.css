@@ -171,23 +171,12 @@
 .portfolio,
  .contact {
   height: 100vh;
-  background: rgb(40, 96, 134);
+  background-color: rgb(48, 107, 156);
   display: flex;
   justify-content: center;
   align-items: flex-end;
   padding: 60px 10px 10px 10px;
   z-index: 9;
-}
-
-.aboutus-bakcground {
-  background-image: url(../imgs/fondo1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 98%;
-  height: 90%;
-  position: absolute;
-  z-index: 8;
-  border-radius: 5px;
 }
 
 .aboutus-bakcground2 {
@@ -196,7 +185,7 @@
   width: 98%;
   height: 90%;
   position: absolute;
-  opacity: 0.8;
+  /* opacity: 0.8; */
   z-index: 8;
 }
 
@@ -295,7 +284,7 @@
 }
 
 /* *********************** */
-        /* aboutus */
+        /* SERVICIOS */
 /* *********************** */
 
 .services__container__title {
@@ -311,7 +300,12 @@
   height: 10%;
   -webkit-box-shadow: 0px 10px 13px -5px rgba(0,0,0,0.82); 
   box-shadow: 0px 7px 5px -5px rgba(0,0,0,0.82);
-  margin: 30px 0px 30px 50px;
+  margin: 30px 0px 0px 50px;
+}
+
+.services__container__text {
+  font-size: 18px;
+  padding: 30px 50px 30px 70px;
 }
 
 .services__container__cards {
@@ -399,4 +393,87 @@
   display: inline-block;
   color: #fff;
   padding-top: 8px;
+}
+
+/* *********************** */
+        /* PORTAFOLIO */
+/* *********************** */
+
+.portofolio__container__title {
+  font-weight: 500;
+  font-size: 35px;
+  background-color: rgb(199, 91, 3);
+  border-radius: 31% 69% 30% 70% / 53% 38% 62% 47% ;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 10%;
+  -webkit-box-shadow: 0px 10px 13px -5px rgba(0,0,0,0.82); 
+  box-shadow: 0px 7px 5px -5px rgba(0,0,0,0.82);
+  margin: 30px 0px 0px 50px;
+}
+
+.portfolio__container__text {
+  font-size: 18px;
+  padding: 30px 50px 30px 70px;
+}
+
+.portofolio__container__content {
+  height: 80%;
+  padding-top: 30px;
+}
+
+.carousel__lista img {
+  cursor: pointer;
+}
+
+
+.contact__container {
+  display: flex;
+}
+
+/* *********************** */
+      /* CONTACTO */
+/* *********************** */
+
+.contact__container-right,
+.contact__container-left {
+  padding: 0px 50px;
+  width: 50%;
+}
+
+.contact__container-right,
+.contact__container-right__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__container-right__title {
+  font-weight: 500;
+  font-size: 35px;
+  background-color: rgb(199, 91, 3);
+  border-radius: 31% 69% 30% 70% / 53% 38% 62% 47% ;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 10%;
+  -webkit-box-shadow: 0px 10px 13px -5px rgba(0,0,0,0.82); 
+  box-shadow: 0px 7px 5px -5px rgba(0,0,0,0.82);
+  margin: 30px 0px 30px 0px;
+}
+.contact__container-right__form {
+  padding: 0px 80px;
+}
+
+
+.form_label {
+  margin-bottom: 7px;
+}
+
+.form_item {
+  margin-bottom: 30px;
 }
