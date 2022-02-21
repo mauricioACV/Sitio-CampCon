@@ -12,7 +12,7 @@ const typed = new Typed(".typed", {
   loop: false, // Repetir el array de strings
   loopCount: false, // Cantidad de veces a repetir el array.  false = infinite
   showCursor: true, // Mostrar cursor palpitanto
-  cursorChar: "_", // Caracter para el cursor
+  cursorChar: "", // Caracter para el cursor
   contentType: "html", // 'html' o 'null' para texto sin formato
 });
 
