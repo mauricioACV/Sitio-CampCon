@@ -46,15 +46,14 @@ window.addEventListener("load", function () {
       },
     ],
   });
+
+  const optionsMenu = ["HOME", "ACERCA DE", "SERVICIOS", "GALERÍA"];
+  const mobileOptions = this.document.getElementById("mobile-options");
+  const checkMobile = this.document.getElementById('check-mobile');
+  mobileOptions.addEventListener("click", (e) => {
+    const clickInOption = optionsMenu.includes(e.target.textContent);
+    if (clickInOption) {
+      checkMobile.checked = false;
+    }
+  });
 });
-
-// const LottieContainer = document.querySelector('.LottieContainer')
-
-// var lottieAnimation = bodymovin.loadAnimation({
-// 	container: LottieContainer, // ID del div
-// 	path: './svg/watermelon-pack-animation-03.json', // Ruta fichero .json de la animación
-// 	renderer: 'svg', // Requerido
-// 	loop: true, // Opcional
-// 	autoplay: true, // Opcional
-// 	name: "Hello World", // Opcional
-//   });
