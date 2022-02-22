@@ -289,13 +289,16 @@ html {
 /* aboutus */
 /* *********************** */
 
-.aboutus,
 .services {
   min-height: 100vh;
   display: flex;
   justify-content: center;
   padding: 90px 20px 10px 20px;
   z-index: 9;
+}
+
+.aboutus {
+  padding: 90px 20px 30px 20px;
 }
 
 .aboutus__container,
