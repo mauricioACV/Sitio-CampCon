@@ -14,8 +14,6 @@
 html {
   scroll-behavior: smooth;
   font-weight: 400;
-  /* font-family: "Lexend Deca", sans-serif; */
-  /* font-family: 'Poppins', sans-serif; */
   font-family: "Montserrat", sans-serif;
   background-color: #e2e3e738;
 }
@@ -55,13 +53,14 @@ html {
   width: 100%;
   padding: 7px 200px;
   background-color: #fff;
+  /* background-color: #e9f8f4; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   z-index: 15;
   top: 0;
-  box-shadow: 0px 3px 13px -5px rgba(0, 0, 0, 0.82);
+  box-shadow: 0px 3px 13px -8px rgba(0, 0, 0, 0.82);
 }
 
 .header__nav--text_logo,
@@ -86,13 +85,14 @@ html {
   color: #000;
   text-decoration: none;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .header__nav--desktop__menu-items a:hover {
   border-bottom: 2px solid #fd5c5f;
   color: #f81317;
   text-decoration: line-through;
+  font-weight: 500;
 }
 
 .header__nav--desktop__menu-items .active-Section {
@@ -217,8 +217,8 @@ html {
 .typed_text2,
 .typed_text3 {
   color: #310d5f;
-  font-weight: 500;
-  font-family: sans-serif;
+  font-weight: 600;
+  /* font-family: sans-serif; */
 }
 
 .header__content-img {
@@ -290,8 +290,7 @@ html {
 /* *********************** */
 
 .aboutus,
-.services,
-.portfolio {
+.services {
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -575,6 +574,10 @@ html {
 /* PORTAFOLIO */
 /* *********************** */
 
+.portfolio {
+  padding: 90px 20px 30px 20px;
+}
+
 .portofolio__container__title {
   padding: 0px 0px 20px 70px;
   font-weight: 400;
@@ -705,7 +708,7 @@ h4 {
     width: auto;
     display: inline-block;
     margin-bottom: 9px;
-    font-size: 20px;
+    font-size: 28px;
   }
   .portofolio__container__content {
     padding: 30px 0px 0px 0px;
@@ -740,6 +743,9 @@ h4 {
   }
   .header__content__container {
     padding: 100px 20px;
+  }
+  .header__content-text {
+    padding-top: 50px;
   }
   .aboutus__container-top__content {
     flex-direction: column;
