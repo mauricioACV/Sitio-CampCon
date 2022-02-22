@@ -47,13 +47,39 @@ window.addEventListener("load", function () {
     ],
   });
 
-  const optionsMenu = ["HOME", "ACERCA DE", "SERVICIOS", "GALERÍA"];
-  const mobileOptions = this.document.getElementById("mobile-options");
-  const checkMobile = this.document.getElementById("check-mobile");
+  const optionsMenu = ["HOME", "ACERCA DE", "SERVICIOS", "GALERÍA", "CONTACTO"];
+  const mobileOptions = document.getElementById("mobile-options");
+  const checkMobile = document.getElementById("check-mobile");
+
   mobileOptions.addEventListener("click", (e) => {
     const clickInOption = optionsMenu.includes(e.target.textContent);
     if (clickInOption) {
       checkMobile.checked = false;
     }
   });
+
+  const navDeskContainer = this.document.getElementById("navDeskContainer");
+  navDeskContainer.addEventListener("click", (e) => {
+    const [classTarget] = Array.from(e.target.classList);
+    const textTarget = e.target.textContent;
+
+    console.log(classTarget);
+
+    if (clickInOption(textTarget) && classTarget !== undefined) {
+      removeActiveClassFromNav();
+      e.target.classList.add("active-section");
+    }
+  });
 });
+
+function clickInOption(option) {
+  const optionsMenu = ["HOME", "ACERCA DE", "SERVICIOS", "GALERÍA", "CONTACTO"];
+  return optionsMenu.includes(option);
+}
+
+function removeActiveClassFromNav() {
+  const navMenu = document.getElementsByClassName("nav-desk-item");
+  Array.from(navMenu).forEach((item) => {
+    item.classList.remove("active-section");
+  });
+}
