@@ -53,7 +53,7 @@ html {
 
 .header__nav--desktop {
   width: 100%;
-  padding: 7px 20px;
+  padding: 7px 200px;
   background-color: #fff;
   display: flex;
   justify-content: space-between;
@@ -61,9 +61,11 @@ html {
   position: fixed;
   z-index: 15;
   top: 0;
+  box-shadow: 0px 3px 13px -5px rgba(0, 0, 0, 0.82);
 }
 
-.header__nav--text_logo {
+.header__nav--text_logo,
+.mobile--text_logo {
   margin-left: 8px;
   font-weight: 600;
   color: #f81317;
@@ -115,6 +117,60 @@ html {
   color: rgb(199, 91, 3);
 }
 
+.mobile-menu-header img {
+  width: 28px;
+}
+
+.mobile_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 10%;
+}
+
+.mobile-options {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#check-mobile,
+.mobile-menu-header {
+  display: none;
+}
+
+.close-icon {
+  width: 35px;
+}
+
+.nav-menu-movil {
+  position: absolute;
+  background-color: #2b3b45;
+  padding: 10px;
+  z-index: 20;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav-menu-movil {
+  transform: translateX(-100%);
+  transition: all 0.3s ease;
+}
+
+.nav-menu-movil a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-menu-movil li {
+  list-style-type: none;
+}
+
 .header__content {
   padding: 0px 0px;
   width: 100%;
@@ -135,7 +191,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 100px 100px;
+  padding: 100px 200px;
 }
 
 .header__content-backgroung {
@@ -155,6 +211,7 @@ html {
 
 .typed_text1 {
   margin-bottom: 0px;
+  color: #f81317;
 }
 
 .typed_text2,
@@ -167,8 +224,17 @@ html {
 .header__content-img {
   border-radius: 50%;
   width: 55px;
-  -webkit-box-shadow: 0px 10px 13px -5px rgba(0, 0, 0, 0.82);
-  box-shadow: 0px 10px 13px -5px rgba(0, 0, 0, 0.82);
+  box-shadow: 0px 5px 13px -5px rgba(0, 0, 0, 0.82);
+}
+
+.mobile_contact_container {
+  width: 100%;
+  height: 10%;
+  justify-content: space-evenly;
+}
+
+.mobile_contact_container img {
+  width: 35px;
 }
 
 .header__content-text {
@@ -226,10 +292,10 @@ html {
 .aboutus,
 .services,
 .portfolio {
-  height: min-100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  /* align-items: flex-end; */
   padding: 90px 20px 10px 20px;
   z-index: 9;
 }
@@ -524,7 +590,7 @@ html {
 
 .portofolio__container__content {
   height: 80%;
-  padding-top: 30px;
+  padding: 30px 100px 0px 100px;
 }
 
 .carousel__lista img {
@@ -598,13 +664,21 @@ h4 {
 
 @media (min-width: 1600px) and (max-width: 2000px) {
   .aboutus__container-top__content,
-  .aboutus__container-down__content,
+  .aboutus__container-down__content {
+    padding: 0px 200px;
+  }
   .services__container__cards {
-    padding: 0px 250px;
+    padding: 0px 400px;
   }
 }
 
-@media (min-width: 320px) and (max-width: 1290px) {
+@media (min-width: 320px) and (max-width: 1350px) {
+  .header__nav--desktop {
+    padding: 7px 20px;
+  }
+  .header__content__container {
+    padding: 100px 100px;
+  }
   .aboutus__container-top__content,
   .aboutus__container-down__content,
   .services__container__cards {
@@ -634,6 +708,9 @@ h4 {
     margin-bottom: 9px;
     font-size: 20px;
   }
+  .portofolio__container__content {
+    padding: 30px 0px 0px 0px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 1150px) {
@@ -650,6 +727,15 @@ h4 {
 }
 
 @media (min-width: 320px) and (max-width: 960px) {
+  .mobile-menu-header {
+    display: block;
+  }
+  #check-mobile:checked ~ .nav-menu-movil {
+    transform: translateX(0%);
+  }
+  .header__content-backgroung {
+    margin-top: 10px;
+  }
   .header__nav--desktop__menu-items {
     display: none;
   }
@@ -687,6 +773,12 @@ h4 {
 }
 
 @media (min-width: 320px) and (max-width: 690px) {
+  .header__content-img {
+    width: 40px;
+  }
+  .header__nav--text_logo {
+    display: none;
+  }
   .header__content__container {
     padding: 50px 10px;
     align-items: center;
@@ -701,6 +793,7 @@ h4 {
   }
 
   .header__content-text span .typed_text1 {
+    margin-top: 15px;
     font-size: 28px;
   }
 
@@ -736,7 +829,6 @@ h4 {
     font-size: 14px;
     text-align: justify;
   }
-
 
   .contact {
     height: 100%;
