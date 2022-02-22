@@ -49,7 +49,7 @@ window.addEventListener("load", function () {
 
   const optionsMenu = ["HOME", "ACERCA DE", "SERVICIOS", "GALERÍA"];
   const mobileOptions = this.document.getElementById("mobile-options");
-  const checkMobile = this.document.getElementById('check-mobile');
+  const checkMobile = this.document.getElementById("check-mobile");
   mobileOptions.addEventListener("click", (e) => {
     const clickInOption = optionsMenu.includes(e.target.textContent);
     if (clickInOption) {
