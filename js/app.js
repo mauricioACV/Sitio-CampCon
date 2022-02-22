@@ -1,6 +1,6 @@
 const typed = new Typed(".typed", {
   strings: [
-    '<span class="typed_text2">Seguridad Industrial y Demarcaciones Viales</span> <br><span class="typed_text3">Compromiso y calidad asegurada.</span>',
+    '<span class="typed_text2">Seguridad Industrial y Demarcaciones Viales</span> <br><span class="typed_text3">Compromiso y Calidad Asegurada.</span>',
   ],
   stringsElement: "#cadenas-texto", // ID del elemento que contiene cadenas de texto a mostrar.
   typeSpeed: 50, // Velocidad en mlisegundos para poner una letra,
