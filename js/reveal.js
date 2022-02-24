@@ -5,13 +5,11 @@ function reveal() {
   for (let i = 0; i < revealElements.length; i++) {
     let windowsHeight = window.innerHeight;
     let revealTop = revealElements[i].getBoundingClientRect().top;
-    let revealPoint = 150;
+    let revealPoint = 100;
     if (revealTop < windowsHeight - revealPoint) {
-      revealElements[i].classList.add("animate__animated", "animate__backInLeft");
-      revealElements[i].classList.remove("v-hidden");
+      revealElements[i].classList.add("active");
     } else {
-      revealElements[i].classList.remove("animate__animated", "animate__backInLeft");
-      revealElements[i].classList.add("v-hidden");
+      revealElements[i].classList.remove("active");
     }
   }
 }
